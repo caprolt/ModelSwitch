@@ -1,0 +1,28 @@
+# Optional RepoTrackr metadata file.
+# Copy to repo root as "repotrackr.yml" (or ".repotrackr.yml") to document plan location and markers.
+# This is future-proofing; RepoTrackr also lets you set the plan path in the UI on add/edit.
+
+plan_paths:
+  - docs/plan.md   # Default location used by the PR script. Change if you move the plan.
+
+status_markers:
+  todo: "[ ]"
+  doing: "[~]"
+  done: "[x]"
+  blocked: "[!]"
+
+# You can add helpful context for contributors:
+instructions:
+  overview: >
+    This repository uses a single Markdown plan that RepoTrackr reads to show project progress.
+    Edit tasks using the checkbox markers above. Push commits and the dashboard will update.
+
+# Optional: if you use a different filename or want to add secondary plans later, include them here.
+# plan_paths:
+#   - plan.md
+#   - README.md#Plan
+
+# Optional future settings (not required by MVP):
+# ignore_paths: []
+# stale_after_days: 14
+# project_display_name: ""
