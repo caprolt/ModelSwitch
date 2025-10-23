@@ -1,8 +1,15 @@
-# 🧠 Model Serving with Rollback Support
+# 🧠 ModelSwitch
 
-A lightweight, self-hostable machine learning model serving API with version control, rollback capability, and real-time monitoring via Prometheus and Grafana.
+[![CI/CD Pipeline](https://github.com/caprolt/ModelSwitch/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/caprolt/ModelSwitch/actions/workflows/ci-cd.yml)
+[![codecov](https://codecov.io/gh/caprolt/ModelSwitch/branch/main/graph/badge.svg)](https://codecov.io/gh/caprolt/ModelSwitch)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Docker](https://img.shields.io/badge/docker-supported-blue.svg)](https://hub.docker.com/r/caprolt/modelswitch)
 
-> A minimal, production-style alternative to Seldon, MLflow, or BentoML — designed for solo developers, fast prototyping, and educational use.
+> **A lightweight, production-ready ML model serving platform with version control, rollback capability, and real-time monitoring.**
+
+A minimal, self-hostable alternative to Seldon, MLflow, or BentoML — designed for solo developers, fast prototyping, and educational use.
 
 ---
 
@@ -219,11 +226,105 @@ Import `grafana/dashboard.json` to get a pre-built dashboard with:
 
 ## 🤝 Contributing
 
-Pull requests welcome! Ideas, bugs, and feature requests can be submitted via Issues.
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details on:
+
+- Code of conduct
+- Development setup
+- Coding standards
+- Testing requirements
+- Pull request process
+
+### Quick Start for Contributors
+
+```bash
+# Fork and clone the repository
+git clone https://github.com/yourusername/ModelSwitch.git
+cd ModelSwitch
+
+# Install development dependencies
+pip install -r requirements.txt -r requirements-dev.txt
+
+# Install pre-commit hooks
+pre-commit install
+
+# Run tests
+pytest
+
+# Run linters
+black app/ tests/
+isort app/ tests/
+flake8 app/ tests/
+```
+
+---
+
+## 📚 Documentation
+
+- **[Architecture](ARCHITECTURE.md)**: System design and technical decisions
+- **[Deployment Guide](DEPLOYMENT.md)**: Deploy to AWS, GCP, Azure, or Kubernetes
+- **[Contributing](CONTRIBUTING.md)**: How to contribute to the project
+- **[API Documentation](http://localhost:8000/docs)**: Interactive API docs (when running)
+
+---
+
+## 🌟 Project Highlights
+
+This project demonstrates:
+
+- ✅ **Clean Architecture**: Separation of concerns, testable code
+- ✅ **Production Practices**: Monitoring, logging, health checks
+- ✅ **DevOps Pipeline**: CI/CD, automated testing, Docker
+- ✅ **Cloud-Ready**: Deploy to AWS, GCP, Azure, or Kubernetes
+- ✅ **Type Safety**: Full type hints and static analysis
+- ✅ **Comprehensive Testing**: Unit, integration, and performance tests
+- ✅ **Security**: Best practices for production deployments
+- ✅ **Observability**: Prometheus metrics and Grafana dashboards
+
+---
+
+## 📊 Project Status
+
+| Component | Status |
+|-----------|--------|
+| Core API | ✅ Stable |
+| Version Control | ✅ Stable |
+| Monitoring | ✅ Stable |
+| Docker Support | ✅ Stable |
+| Documentation | ✅ Complete |
+| Test Coverage | 🟡 In Progress |
+| Cloud Deployment | ✅ Documented |
+
+---
+
+## 🙏 Acknowledgments
+
+Built with:
+- [FastAPI](https://fastapi.tiangolo.com/) - Modern web framework
+- [scikit-learn](https://scikit-learn.org/) - Machine learning
+- [Prometheus](https://prometheus.io/) - Monitoring
+- [Grafana](https://grafana.com/) - Visualization
 
 ---
 
 ## 📄 License
 
-MIT License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 📧 Contact
+
+- **GitHub**: [@caprolt](https://github.com/caprolt)
+- **Issues**: [GitHub Issues](https://github.com/caprolt/ModelSwitch/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/caprolt/ModelSwitch/discussions)
+
+---
+
+<div align="center">
+
+**⭐ Star this repository if you find it useful! ⭐**
+
+Made with ❤️ for the ML community
+
+</div>
 
